@@ -1,0 +1,207 @@
+  *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:35px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    Z-index:100;
+    background:rgba(3, 13, 22, 0.8);
+    
+}
+.logo{
+    font-size: 25px;
+    color:white;
+    font-weight:600;
+    transition:0.3s ease;
+}
+.logo:hover{
+    color: blueviolet;
+    text-shadow: 0 0 25px blueviolet;
+    transform:scale(1.1);
+}
+span{
+    color:blueviolet;
+}
+.navbar a{
+       margin:0 20px;
+       font-size:18px;
+       color:white;
+       font-weight: 500;
+       border-bottom:3px solid transparent;
+      transition:0.3s ease;
+      display: inline;
+}
+.navbar a:hover, 
+.navbar a.active{
+    color:blueviolet;
+
+}
+.home{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    min-height: 100vh;
+    padding:30px 12% 0;
+    background:rgb(241,241,241);
+}
+.content{
+    max-width:1500px;
+    margin:20px;
+
+}
+.content h3{
+    font-size:30px;
+   
+}
+.content h1{
+    font-size: 35px;
+    line-height: 1;
+}
+.content p{
+    font-size:18px;
+    margin:25px 0 30px;
+}
+.image-box{
+           width: 700px;
+           height: 250px;
+           border-radius: 20px  20px ; 
+           overflow: hidden;
+           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+           border: 1px solid #5c5858;
+           margin:30px;
+}
+.image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+         }
+         .about{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding: 12% 8%;
+            gap:15px;
+            background:whitesmoke;
+         }
+         .about-img.img{
+            position:relative;
+             width: 700px;
+             height: 250px;
+            border-radius: 30px; 
+            overflow: hidden;
+            box-shadow: 0 0 25px blueviolet;
+            border-radius:50%;
+
+         }
+         .about-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+         }
+         .about-content h2{
+            font-size:35px;
+            color:Black;
+            text-align: left;
+         }
+         .about-content h3{
+               font-size:50px;
+               color:black;
+            }
+       .about-content p{
+        color:black;
+        font-size: 20px;
+        margin: 20px 0 3px;
+       }
+        .section, .about, .skills, .languages, .contact {
+            margin-top: 20px;
+        }
+        ul{
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li::before {
+          content: '• ';
+          color: #000;
+          font-weight: bold;
+         }
+         .project{
+            padding:60px 20px;
+            max-width:1200px;
+            margin:0px auto;
+            text-align:center;
+         }
+         .project h2{
+            font-size:30px;
+            margin-bottom:40px;
+            color:#222;
+         }
+         .projects-grid{
+            display:grid;
+            grid-template-columns: repeat(300px,1fr);
+            gap:20px;
+         }
+         .projects-card{
+            background-color: #fff;
+            border-radius: 10px;
+            overflow:hidden;
+            box-shadow:0 4px 10px rgba(0, 0, 0, 0.2);
+            transition:transform 0.3s ease,box-shadow 0.3s ease;
+         }
+          .projects-card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 8px 20px rgba(0, 0, 0, 0.6);
+          }
+          .product-image{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+          }
+          .project-content{
+            padding:20px;
+          }
+          .project-content h3{
+            font-size:25px;
+            margin-bottom: 10px;
+            color:#222;
+          }
+           .project-content p{
+            font-size: 18px;
+            color:#666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+           }
+           .project-link{
+             display:inline-block;
+             text-decoration: none;
+             color:#fff;
+             background-color: #007bff;
+             padding:10px 20px;
+             border-radius: 5px;
+             font-size: 15px;
+             transition: background-color 0.3s ease;
+           }
+           .project-link:hover{
+            background-color: #0056b3;
+           }
+           @media(max-width:768px){
+            .projects h2{
+                font-size:2rem;
+            }
+            .project-card{
+                margin:0 10px;
+            }
+           }
